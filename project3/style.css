@@ -7,3 +7,22 @@
     color: khaki;
     text-align: center;
 }
+
+h1 {
+    font-family: Helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.Brushes {
+    background-color: mediumspringgreen;
+}
+
+.Frames {
+    background-color: lightcoral;
+}
+
+.Paint {
+    background-color: skyblue;
+}
