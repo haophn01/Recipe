@@ -19,6 +19,12 @@ h1 {
     color: white;
 }
 
+.highlight {
+    font-family: Helvetica;
+    font-weight: bold;
+    color: blue;
+}
+
 .Brushes {
     background-color: mediumspringgreen;
 }
