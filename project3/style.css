@@ -1,4 +1,9 @@
 .title-background {
     background-image: url("/Users/haophan/Documents/Recipe/project3/pattern.webp");
-
+    background-position: center;
+    font-family: Helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    text-wrap: center;
 }
