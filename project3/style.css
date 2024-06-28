@@ -2,10 +2,14 @@
     background-image: url("/Users/haophan/Documents/Recipe/project3/pattern.webp");
     background-position: center;
     font-family: Helvetica;
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     color: khaki;
     text-align: center;
+}
+
+p {
+    font-family: Helvetica;
 }
 
 h1 {
