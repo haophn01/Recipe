@@ -16,9 +16,9 @@ Create a compareGuesses() function. This function:
 function compareGuesses(human_guess, computer_guess, target_guess) {
   let human_dis = Math.abs(human_guess - target_guess);
   let computer_dis = Math.abs(computer_guess - target_guess);
-  if (human_guess >= computer_dis) {
+  if (human_dis > computer_dis) {
     return false;
-  } else if (human_guess < computer_dis) {
+  } else if (human_dis <= computer_dis) {
     return true;
   }
 }
