@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synced Textareas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        .container {
+            display: flex;
+        }
+        textarea {
+            width: 500px;
+            height: 400px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid yellow;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <textarea id="textarea1" oninput="syncText(this)"></textarea>
+        <textarea id="textarea2" oninput="syncText(this)"></textarea>
+    </div>
+    <script>
+        function syncText(source) {
+            const textarea1 = document.getElementById('textarea1');
+            const textarea2 = document.getElementById('textarea2');
+            if (source.id === 'textarea1') {
+                textarea2.value = source.value;
+            } else {
+                textarea1.value = source.value;
+            }
+        }
+    </script>
+</body>
+</html>
